@@ -1,0 +1,109 @@
+#dog-div {
+  position: absolute;
+  width: 300px;
+  height: 380px;
+  left: calc(50% - 150px);
+  top: 100px;
+}
+
+#dog-image {
+  width: 300px;
+  height: 300px;
+}
+
+#particle-area {
+  position: absolute;
+  width: 300px;
+  height: 340px;
+  left: calc(50% - 150px);
+  top: 80px;
+  pointer-events: none;
+}
+
+#particle-toggle {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+#welcome-message {
+  position: relative;
+  z-index: 1;
+  top: 500px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+#password-input {
+  position: absolute;
+  display: block;
+  left: calc(50% - 100px);
+  z-index: 6;
+  opacity: 0;
+  top: 80px;
+
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #bebebe;
+}
+
+#password-input::-ms-reveal {
+  display: none;
+}
+
+#password-error {
+  position: absolute;
+  display: none;
+  z-index: 6;
+  font-size: 50px;
+  font-family: "Arial";
+  color: #ff0000;
+  font-weight: bold;
+  text-align: center;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.fade {
+  animation: fadein 5s forwards;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.blink {
+  animation-name: blinking;
+  animation-duration: 2s;
+  animation-timing-function: steps(2, end);
+  animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+  from {opacity: 1;}
+  to   { opacity: 0; }
+}
+
+#validator {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
